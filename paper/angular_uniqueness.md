@@ -280,12 +280,12 @@ Requirements: Python 3.8+, NumPy, SciPy, mpmath. C compiler (gcc/clang) for `.c`
 
 1. P. Diaconis, J. Fulman, "Carries, Shuffling, and Symmetric Functions," *Adv. Appl. Math.* 43(2), 176–196, 2009.
 2. I. Niven, "Irrational Numbers," *Carus Mathematical Monographs* 11, MAA, 1956.
-3. [A] Companion paper: "Spectral Theory of Carries in Positional Multiplication," this series.
-4. [B] Companion paper: "Carry Polynomials and the Euler Product: An Approximation Framework," this series.
-5. [P1] Companion paper: "π from Pure Arithmetic: A Spectral Phase Transition in the Binary Carry Bridge," this series.
-6. [P2] Companion paper: "The Sector Ratio in Binary Multiplication: From Markov Failure to Transcendence," this series.
-7. [E] Companion paper: "The Trace Anomaly of Binary Multiplication," this series.
-8. [F] Companion paper: "Exact Covariance Structure of Binary Carry Chains," this series.
+3. [A] Companion paper: "Spectral Theory of Carries in Positional Multiplication," this series. doi:10.5281/zenodo.18895593
+4. [B] Companion paper: "Carry Polynomials and the Euler Product: An Approximation Framework," this series. doi:10.5281/zenodo.18895597
+5. [P1] Companion paper: "π from Pure Arithmetic: A Spectral Phase Transition in the Binary Carry Bridge," this series. doi:10.5281/zenodo.18895611
+6. [P2] Companion paper: "The Sector Ratio in Binary Multiplication: From Markov Failure to Transcendence," this series. doi:10.5281/zenodo.18895615
+7. [E] Companion paper: "The Trace Anomaly of Binary Multiplication," this series. doi:10.5281/zenodo.18895604
+8. [F] Companion paper: "Exact Covariance Structure of Binary Carry Chains," this series. doi:10.5281/zenodo.18895607
 
 ---
 
