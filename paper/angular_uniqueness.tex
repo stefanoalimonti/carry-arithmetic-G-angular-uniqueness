@@ -153,10 +153,10 @@ Boundary}\label{angular-coordinates-and-the-d-parity-boundary}
 \subsubsection{2.1 Setup}\label{setup}
 
 Let \(p, q\) be independent random \(d\)-digit integers in base \(b\), with
-leading digit \(\geq 1\) and remaining digits uniform on \(\{0, \ldots, b-1\}\).
-Write \(p = b^{d-1}(1+X)\), \(q = b^{d-1}(1+Y)\), so that \(X, Y \in [0, b-1)\)
-are continuous approximations to the fractional parts. The product \(N = pq\)
-has
+leading digit \(\geq 1\) and remaining digits uniform on
+\(\lbrace{}0, \ldots, b-1\rbrace{}\). Write \(p = b^{d-1}(1+X)\),
+\(q = b^{d-1}(1+Y)\), so that \(X, Y \in [0, b-1)\) are continuous
+approximations to the fractional parts. The product \(N = pq\) has
 
 \[N = b^{2d-2}\,W, \qquad W = (1+X)(1+Y) \in [1, b^2).\]
 
@@ -233,7 +233,7 @@ proportional, producing a cancellation that eliminates \(P\).
 
 For \(b = 2\), the D-odd condition \(W < 2\) maps to the right triangle
 
-\[\mathcal{T} = \{(\alpha, \beta) : \alpha \geq 0,\; \beta \geq 0,\; \alpha + \beta < \pi/4\}\]
+\[\mathcal{T} = \lbrace{}(\alpha, \beta) : \alpha \geq 0,\; \beta \geq 0,\; \alpha + \beta < \pi/4\rbrace{}\]
 
 in the angular square \([0, \pi/4)^2\). The D-odd probability is
 
@@ -384,21 +384,21 @@ Richardson extrapolation from the most recent pair gives
 \(\sim 1.4\sigma\)).
 
 PSLQ search with extended basis
-\(\{1, \ln 2, \ln 3, \ln^2 3, \arctan(1/2), \zeta(2)/9, \sqrt{3}, \pi\}\) finds
-no exact relation at the available precision (\(\sim 5\)--\(6\) digits). The
-candidate \(\ln(3) - 1/2\) is suggestive but not confirmed.
+\(\lbrace{}1, \ln 2, \ln 3, \ln^2 3, \arctan(1/2), \zeta(2)/9, \sqrt{3}, \pi\rbrace{}\)
+finds no exact relation at the available precision (\(\sim 5\)--\(6\) digits).
+The candidate \(\ln(3) - 1/2\) is suggestive but not confirmed.
 
 \textbf{Enhanced analysis (G12).} Separating \(K\) into even
-\(\{2,4,6,8,10,12\}\) and odd \(\{3,5,7,9,11\}\) subsequences eliminates the
-oscillation (each subsequence converges monotonically), consistent with a
-\((-1/3)^K\) alternating eigenvalue. However, multi-term Richardson
-extrapolation on each subsequence with rate \(1/3\) overshoots the target by
-\(\sim 10^{-3}\): the effective correction rate within the even subsequence is
-\(r_{\text{eff}} \approx 1.07\), not \(1/9\). This reveals a
-\textbf{pre-asymptotic structure}: the correction coefficients \(A_K\) depend on
-\(K\) (the boundary observable changes with each cascade depth), so the true
-expansion is \(c_1(K) = c_\infty + (A_0 + A_1/K + \cdots)(1/3)^K\), defeating
-simple geometric Richardson. Nonlinear models (alternating eigenvalues
+\(\lbrace{}2,4,6,8,10,12\rbrace{}\) and odd \(\lbrace{}3,5,7,9,11\rbrace{}\)
+subsequences eliminates the oscillation (each subsequence converges
+monotonically), consistent with a \((-1/3)^K\) alternating eigenvalue. However,
+multi-term Richardson extrapolation on each subsequence with rate \(1/3\)
+overshoots the target by \(\sim 10^{-3}\): the effective correction rate within
+the even subsequence is \(r_{\text{eff}} \approx 1.07\), not \(1/9\). This
+reveals a \textbf{pre-asymptotic structure}: the correction coefficients \(A_K\)
+depend on \(K\) (the boundary observable changes with each cascade depth), so
+the true expansion is \(c_1(K) = c_\infty + (A_0 + A_1/K + \cdots)(1/3)^K\),
+defeating simple geometric Richardson. Nonlinear models (alternating eigenvalues
 \(\pm 1/3, \pm 1/9, 1/27\)) also underfit (RMS \(\sim 5 \times 10^{-3}\)). All
 estimates cluster in \([0.590, 0.600]\), bracketing \(\ln(3) - 1/2 = 0.5986\)
 (consistent at \(0.6\sigma\)), but the available precision (\(\sim 2\)--\(3\)
@@ -469,10 +469,11 @@ the theorem.
 \subsubsection{4.5 Transfer Operator Spectrum}\label{transfer-operator-spectrum}
 
 The carry transfer operator for base-\(b\) multiplication, acting on carry
-states \(\{0, \ldots, b-1\}\), has eigenvalues \(\lambda_k = 1/b^k\) for
-\(k = 0, 1, \ldots, b-1\) --- exactly the Diaconis--Fulman spectrum. This holds
-for all tested bases \(b = 2, 3, 5, 7, 10\) and extends the Diaconis--Fulman
-theorem from addition carries to multiplication carries.
+states \(\lbrace{}0, \ldots, b-1\rbrace{}\), has eigenvalues
+\(\lambda_k = 1/b^k\) for \(k = 0, 1, \ldots, b-1\) --- exactly the
+Diaconis--Fulman spectrum. This holds for all tested bases
+\(b = 2, 3, 5, 7, 10\) and extends the Diaconis--Fulman theorem from addition
+carries to multiplication carries.
 
 The mechanism is the division by \(b\) in the carry recurrence: a linear
 perturbation \(\delta(c) = c - \mathbb{E}[c]\) maps to \(\delta/b\) at each
@@ -584,9 +585,9 @@ G12 & Python & Odd-even separation, alternating eigenvalue models \\
 \end{longtable}
 
 Key result from G11: base-3 transfer operators confirm the full Diaconis--Fulman
-spectrum \(\{1, 1/3, 1/9, 1/27\}\). Best estimate \(c_1(3) \approx 0.5985\),
-candidate \(\ln 3 - 1/2\), PSLQ inconclusive at 4-digit precision. Definitive
-identification requires \(K \geq 16\).
+spectrum \(\lbrace{}1, 1/3, 1/9, 1/27\rbrace{}\). Best estimate
+\(c_1(3) \approx 0.5985\), candidate \(\ln 3 - 1/2\), PSLQ inconclusive at
+4-digit precision. Definitive identification requires \(K \geq 16\).
 
 Requirements: Python 3.8+, NumPy, SciPy, mpmath. C compiler (gcc/clang) for
 \texttt{.c} scripts.

@@ -42,7 +42,7 @@ For $b > 2$ the boundary is a curve, the angular range involves $\arctan(b-1)$ (
 
 ### 2.1 Setup
 
-Let $p, q$ be independent random $d$-digit integers in base $b$, with leading digit $\geq 1$ and remaining digits uniform on $\{0, \ldots, b-1\}$. Write $p = b^{d-1}(1+X)$, $q = b^{d-1}(1+Y)$, so that $X, Y \in [0, b-1)$ are continuous approximations to the fractional parts. The product $N = pq$ has
+Let $p, q$ be independent random $d$-digit integers in base $b$, with leading digit $\geq 1$ and remaining digits uniform on $\lbrace{}0, \ldots, b-1\rbrace{}$. Write $p = b^{d-1}(1+X)$, $q = b^{d-1}(1+Y)$, so that $X, Y \in [0, b-1)$ are continuous approximations to the fractional parts. The product $N = pq$ has
 
 $$N = b^{2d-2}\,W, \qquad W = (1+X)(1+Y) \in [1, b^2).$$
 
@@ -88,7 +88,7 @@ The numerator $b - 2$ vanishes if and only if $b = 2$. When $b = 2$: $f(P) = (1-
 
 For $b = 2$, the D-odd condition $W < 2$ maps to the right triangle
 
-$$\mathcal{T} = \{(\alpha, \beta) : \alpha \geq 0,\; \beta \geq 0,\; \alpha + \beta < \pi/4\}$$
+$$\mathcal{T} = \lbrace{}(\alpha, \beta) : \alpha \geq 0,\; \beta \geq 0,\; \alpha + \beta < \pi/4\rbrace{}$$
 
 in the angular square $[0, \pi/4)^2$. The D-odd probability is
 
@@ -182,9 +182,9 @@ The $K = 11, 12$ values are exact rationals: $c_1(3, 11) = 8342998915 / 13946313
 
 A dramatic **odd-even oscillation** in $\rho(K)$ dominates the convergence: odd $K$ overshoots, even $K$ undershoots, with the oscillation amplitude decreasing. This makes multi-term extrapolation unstable. The 1-term Richardson extrapolation from the most recent pair gives $c_\infty^{\text{Rich}}(11, 12) = 0.59865$, close to $\ln(3) - 1/2 = 0.59861\ldots$ ($\Delta = 3.6 \times 10^{-5}$, $\sim 1.4\sigma$).
 
-PSLQ search with extended basis $\{1, \ln 2, \ln 3, \ln^2 3, \arctan(1/2), \zeta(2)/9, \sqrt{3}, \pi\}$ finds no exact relation at the available precision ($\sim 5$–$6$ digits). The candidate $\ln(3) - 1/2$ is suggestive but not confirmed.
+PSLQ search with extended basis $\lbrace{}1, \ln 2, \ln 3, \ln^2 3, \arctan(1/2), \zeta(2)/9, \sqrt{3}, \pi\rbrace{}$ finds no exact relation at the available precision ($\sim 5$–$6$ digits). The candidate $\ln(3) - 1/2$ is suggestive but not confirmed.
 
-**Enhanced analysis (G12).** Separating $K$ into even $\{2,4,6,8,10,12\}$ and odd $\{3,5,7,9,11\}$ subsequences eliminates the oscillation (each subsequence converges monotonically), consistent with a $(-1/3)^K$ alternating eigenvalue. However, multi-term Richardson extrapolation on each subsequence with rate $1/3$ overshoots the target by $\sim 10^{-3}$: the effective correction rate within the even subsequence is $r_{\text{eff}} \approx 1.07$, not $1/9$. This reveals a **pre-asymptotic structure**: the correction coefficients $A_K$ depend on $K$ (the boundary observable changes with each cascade depth), so the true expansion is $c_1(K) = c_\infty + (A_0 + A_1/K + \cdots)(1/3)^K$, defeating simple geometric Richardson. Nonlinear models (alternating eigenvalues $\pm 1/3, \pm 1/9, 1/27$) also underfit (RMS $\sim 5 \times 10^{-3}$). All estimates cluster in $[0.590, 0.600]$, bracketing $\ln(3) - 1/2 = 0.5986$ (consistent at $0.6\sigma$), but the available precision ($\sim 2$–$3$ digits) is far below the $\sim 8$ digits required for definitive PSLQ. Data at $K \geq 16$ would be needed.
+**Enhanced analysis (G12).** Separating $K$ into even $\lbrace{}2,4,6,8,10,12\rbrace{}$ and odd $\lbrace{}3,5,7,9,11\rbrace{}$ subsequences eliminates the oscillation (each subsequence converges monotonically), consistent with a $(-1/3)^K$ alternating eigenvalue. However, multi-term Richardson extrapolation on each subsequence with rate $1/3$ overshoots the target by $\sim 10^{-3}$: the effective correction rate within the even subsequence is $r_{\text{eff}} \approx 1.07$, not $1/9$. This reveals a **pre-asymptotic structure**: the correction coefficients $A_K$ depend on $K$ (the boundary observable changes with each cascade depth), so the true expansion is $c_1(K) = c_\infty + (A_0 + A_1/K + \cdots)(1/3)^K$, defeating simple geometric Richardson. Nonlinear models (alternating eigenvalues $\pm 1/3, \pm 1/9, 1/27$) also underfit (RMS $\sim 5 \times 10^{-3}$). All estimates cluster in $[0.590, 0.600]$, bracketing $\ln(3) - 1/2 = 0.5986$ (consistent at $0.6\sigma$), but the available precision ($\sim 2$–$3$ digits) is far below the $\sim 8$ digits required for definitive PSLQ. Data at $K \geq 16$ would be needed.
 
 ### 4.3 Convergence Rate
 
@@ -222,7 +222,7 @@ The curvature vanishes only for $b = 2$ and grows monotonically, confirming the 
 
 ### 4.5 Transfer Operator Spectrum
 
-The carry transfer operator for base-$b$ multiplication, acting on carry states $\{0, \ldots, b-1\}$, has eigenvalues $\lambda_k = 1/b^k$ for $k = 0, 1, \ldots, b-1$ — exactly the Diaconis–Fulman spectrum. This holds for all tested bases $b = 2, 3, 5, 7, 10$ and extends the Diaconis–Fulman theorem from addition carries to multiplication carries.
+The carry transfer operator for base-$b$ multiplication, acting on carry states $\lbrace{}0, \ldots, b-1\rbrace{}$, has eigenvalues $\lambda_k = 1/b^k$ for $k = 0, 1, \ldots, b-1$ — exactly the Diaconis–Fulman spectrum. This holds for all tested bases $b = 2, 3, 5, 7, 10$ and extends the Diaconis–Fulman theorem from addition carries to multiplication carries.
 
 The mechanism is the division by $b$ in the carry recurrence: a linear perturbation $\delta(c) = c - \mathbb{E}[c]$ maps to $\delta/b$ at each step, regardless of the convolution distribution. Higher-order perturbations decay at rates $1/b^2, 1/b^3, \ldots$, completing the spectrum.
 
@@ -270,7 +270,7 @@ All scripts are in `experiments/`, following the naming convention `G{NN}_{descr
 | G10–G11 | C/Python | Extended enumeration $K = 11$–$14$; enhanced PSLQ with 5-term Richardson |
 | G12 | Python | Odd-even separation, alternating eigenvalue models |
 
-Key result from G11: base-3 transfer operators confirm the full Diaconis–Fulman spectrum $\{1, 1/3, 1/9, 1/27\}$. Best estimate $c_1(3) \approx 0.5985$, candidate $\ln 3 - 1/2$, PSLQ inconclusive at 4-digit precision. Definitive identification requires $K \geq 16$.
+Key result from G11: base-3 transfer operators confirm the full Diaconis–Fulman spectrum $\lbrace{}1, 1/3, 1/9, 1/27\rbrace{}$. Best estimate $c_1(3) \approx 0.5985$, candidate $\ln 3 - 1/2$, PSLQ inconclusive at 4-digit precision. Definitive identification requires $K \geq 16$.
 
 Requirements: Python 3.8+, NumPy, SciPy, mpmath. C compiler (gcc/clang) for `.c` scripts.
 
